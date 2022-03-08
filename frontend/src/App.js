@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomeScreen from './screens/homeScreen';
@@ -9,11 +9,13 @@ import BackDrop from './components/Backdrop';
 import SideDrawer from './components/SideDrawer';
 
 function App() {
+
+  const [sideToggle,setSideToggle]=useState(false);
   return (
     <Router>
-      <Navbar/>
-      <SideDrawer/>
-      <BackDrop/>
+      <Navbar click={()=>setSideToggle(true)}/>
+      <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
+      <BackDrop show={sideToggle} click={()=>setSideToggle(false)}/>
       <main>
         <Routes>
           <Route  path="/" element={<HomeScreen/>}/> 
