@@ -17,9 +17,9 @@ function App() {
       <SideDrawer show={sideToggle} click={()=>setSideToggle(false)}/>
       <BackDrop show={sideToggle} click={()=>setSideToggle(false)}/>
       <main>
-        <Routes>
+        <Routes >
           <Route  path="/" element={<HomeScreen/>}/> 
-          <Route path="/product/:id" element={<ProductScreen/>}/>
+          <Route path="/products/:id" element={<ProductScreen />}/>
           <Route path="/cart" element={<CartScreen/>}/>
 
           

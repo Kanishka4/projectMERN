@@ -28,7 +28,7 @@
   }
   
   .sideDrawerLinks > li > a:hover {
-    background: #333;
+    background: #6b8e23;
     color: #f4f4f4;
   }
   
@@ -56,7 +56,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #171717;
+    background-color: #879962;
     border-radius: 50%;
     margin-left: 8px;
     color: #fff;
@@ -65,7 +65,7 @@
   
   .sideDrawerLinks > li > a:hover .sideDrawerCartbadge {
     background-color: #fff;
-    color: #171717;
+    color: #8cd48c;
   }
   
   @media (min-width: 960px) {

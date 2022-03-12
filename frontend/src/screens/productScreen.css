@@ -12,6 +12,11 @@
   .leftImage {
     margin: 1rem;
     flex: 0.6;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  }
+
+  .leftImage img{
+    border-radius:2%;
   }
   
   .leftInfo {
@@ -60,9 +65,8 @@
     grid-column: 1/-1;
     width: 100%;
     padding: 10px 16px;
-    background: #171717;
+    background: #87a96b;
     color: #f4f4f4;
-    border: 1px solid #171717;
     cursor: pointer;
     border-radius: 5px;
   }

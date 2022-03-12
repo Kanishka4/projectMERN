@@ -1,6 +1,7 @@
 .navbar {
     width: 100%;
-    background-color: #171717;
+    background-color: #6b8e23;
+    font-family: sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,15 +40,17 @@
   }
   
   .cartLink {
-    background: #333;
+    background: #87a96b;
     padding: 10px;
     border-radius: 8px;
+    
+  }
+
+  .cartLink:hover{
+    cursor:pointer;
   }
   
-  .cartLink:hover {
-    background: #dd219e;
-    color: #f4f4f4;
-  }
+
   
   .cartLogoBadge {
     width: 30px;
